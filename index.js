@@ -34,4 +34,13 @@ function addressAt(index, linkedList, collection) {
   return null
 }
 
-function indexAt()
+function indexAt(node, collection, linkedList) {
+  let pointerNode = collection[linkedList]
+  for( let i = 0; i < 100; i++ ) {
+    if( pointerNode === node ) {
+      return i;
+    }
+    pointerNode = next(pointerNode, collection)
+  }
+  return null
+}
