@@ -11,3 +11,12 @@ function next(node, collection) {
    let nextAddress = node.next;
    return collection[nextAddress];
 }
+
+function nodeAt(index, linkedList, collection) {
+  let node = linkedList;
+  for( let i = 0; i < index; i++ ) {
+    console.log(node);
+    node = next(node, collection);
+  }
+  return node;
+}
