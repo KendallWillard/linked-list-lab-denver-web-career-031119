@@ -21,8 +21,8 @@ function nodeAt(index, linkedList, collection) {
 }
 
 function addressAt(index, linkedList, collection) {
-  // let node = linkedList;
-  // for( let i = 0; i < index; i++ ) {
+  let node = linkedList;
+  for( let i = 0; i < index; i++ ) {
 
-  // }
+  }
 }
