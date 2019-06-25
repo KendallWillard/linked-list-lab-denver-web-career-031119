@@ -13,10 +13,16 @@ function next(node, collection) {
 }
 
 function nodeAt(index, linkedList, collection) {
-  let node = linkedList;
+  let node = collection[linkedList];
   for( let i = 0; i < index; i++ ) {
-    console.log(node);
     node = next(node, collection);
   }
   return node;
+}
+
+function addressAt(index, linkedList, collection) {
+  // let node = linkedList;
+  // for( let i = 0; i < index; i++ ) {
+
+  // }
 }
